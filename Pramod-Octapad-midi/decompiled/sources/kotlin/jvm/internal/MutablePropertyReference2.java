@@ -1,0 +1,42 @@
+package kotlin.jvm.internal;
+
+import kotlin.reflect.KCallable;
+import kotlin.reflect.KMutableProperty2;
+import kotlin.reflect.KProperty2;
+/* loaded from: classes4.dex */
+public abstract class MutablePropertyReference2 extends MutablePropertyReference implements KMutableProperty2 {
+    public MutablePropertyReference2() {
+    }
+
+    public MutablePropertyReference2(Class owner, String name, String signature, int flags) {
+        super(NO_RECEIVER, owner, name, signature, flags);
+    }
+
+    @Override // kotlin.jvm.internal.CallableReference
+    protected KCallable computeReflected() {
+        return Reflection.mutableProperty2(this);
+    }
+
+    @Override // kotlin.jvm.functions.Function2
+    /* renamed from: invoke */
+    public Object mo2029invoke(Object receiver1, Object receiver2) {
+        return get(receiver1, receiver2);
+    }
+
+    @Override // kotlin.reflect.KProperty, kotlin.reflect.KProperty0
+    /* renamed from: getGetter  reason: collision with other method in class */
+    public KProperty2.Getter mo1921getGetter() {
+        return ((KMutableProperty2) mo1918getReflected()).mo1921getGetter();
+    }
+
+    @Override // kotlin.reflect.KMutableProperty, kotlin.reflect.KMutableProperty0
+    /* renamed from: getSetter  reason: collision with other method in class */
+    public KMutableProperty2.Setter mo1917getSetter() {
+        return ((KMutableProperty2) mo1918getReflected()).mo1917getSetter();
+    }
+
+    @Override // kotlin.reflect.KProperty2
+    public Object getDelegate(Object receiver1, Object receiver2) {
+        return ((KMutableProperty2) mo1918getReflected()).getDelegate(receiver1, receiver2);
+    }
+}

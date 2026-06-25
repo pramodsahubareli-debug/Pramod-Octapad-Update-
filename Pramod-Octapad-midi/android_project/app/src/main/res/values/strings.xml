@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pramod Octapad Pro Fast</string>
+    <string name="androidx_startup">androidx.startup</string>
+    <string name="firebase_database_url">https://pramod-octapad-pro-fe8e0-default-rtdb.firebaseio.com</string>
+    <string name="gcm_defaultSenderId">299812235672</string>
+    <string name="google_api_key">AIzaSyB2v4EMISiB2bmHX4eMQ8dnG--ETYZnZLY</string>
+    <string name="google_app_id">1:299812235672:android:580a3508bd44c0cf5863ed</string>
+    <string name="google_crash_reporting_api_key">AIzaSyB2v4EMISiB2bmHX4eMQ8dnG--ETYZnZLY</string>
+    <string name="google_storage_bucket">pramod-octapad-pro-fe8e0.firebasestorage.app</string>
+    <string name="project_id">pramod-octapad-pro-fe8e0</string>
+</resources>
